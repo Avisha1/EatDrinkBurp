@@ -70,9 +70,6 @@ node_modules/
 # CMake
 cmake-build-debug/
 
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
-
 ## File-based project format:
 *.iws
 
@@ -80,6 +77,9 @@ cmake-build-debug/
 
 # IntelliJ
 out/
+
+# Ignore IntelliJ crap
+/.idea
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
