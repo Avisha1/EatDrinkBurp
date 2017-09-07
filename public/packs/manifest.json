@@ -1,0 +1,14 @@
+{
+  "App.js": "http://0.0.0.0:8080/packs/App.js",
+  "ContentPage.js": "http://0.0.0.0:8080/packs/ContentPage.js",
+  "Filters/Filters.js": "http://0.0.0.0:8080/packs/Filters/Filters.js",
+  "GoogleMapsApi/Map.js": "http://0.0.0.0:8080/packs/GoogleMapsApi/Map.js",
+  "GoogleMapsApi/MapItem.js": "http://0.0.0.0:8080/packs/GoogleMapsApi/MapItem.js",
+  "Restaurant.js": "http://0.0.0.0:8080/packs/Restaurant.js",
+  "RestaurantList.js": "http://0.0.0.0:8080/packs/RestaurantList.js",
+  "application.js": "http://0.0.0.0:8080/packs/application.js",
+  "forms/FormNewRestaurant.js": "http://0.0.0.0:8080/packs/forms/FormNewRestaurant.js",
+  "headers_footers/Footer.js": "http://0.0.0.0:8080/packs/headers_footers/Footer.js",
+  "headers_footers/Header.js": "http://0.0.0.0:8080/packs/headers_footers/Header.js",
+  "hello_react.js": "http://0.0.0.0:8080/packs/hello_react.js"
+}
