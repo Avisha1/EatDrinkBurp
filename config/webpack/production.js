@@ -11,7 +11,6 @@ module.exports = merge(sharedConfig, {
   output: { filename: '[name]-[chunkhash].js' },
   devtool: 'source-map',
   stats: 'normal',
-  warnings: true,
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
