@@ -89,6 +89,12 @@
     margin-top: 80px;
 }
 
+.vcenter-no-margin{
+    vertical-align: middle;
+    float: none;
+    margin-top: 0px;
+}
+
 p.small {
     line-height: 70%;
 }

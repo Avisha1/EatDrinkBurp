@@ -3,6 +3,7 @@ import React from 'react'
 class Restaurant extends React.Component {
 
     render() {
+        console.log('restaurant object', this.props.data);
         const tenBisIcon = <img className="ten_bis_icon" src="/assets/10bis_icon.jpg"/>;
 
         return (
@@ -14,20 +15,29 @@ class Restaurant extends React.Component {
 
                 <div className="col-xs-10 col-sm-9">
 
-                    <p>
-                        <strong>{this.props.data.name}</strong> ({this.props.data.cuisine_name})
-                    </p>
-                    {/*<p className="small">*/}
-                        {/*{this.props.data.cuisine_name}*/}
-                    {/*</p>*/}
-                    {this.props.data.accepts_10_bis && tenBisIcon}
-                    <p className="small">
-                        Address: {this.props.data.address}
-                    </p>
-                    <p className="small">
-                        Delivery Time: {this.props.data.max_delivery_time}
-                    </p>
-                    <GetStars val={this.props.data.rating}/>
+
+                    <div className="row">
+
+                        <div className="col-xs-11">
+
+                            <p>
+                                <strong>{this.props.data.name}</strong> ({this.props.data.cuisine_name})
+                                <p className="small">
+                                    Address: {this.props.data.address}
+                                </p>
+                                <p className="small">
+                                    Delivery Time: {this.props.data.max_delivery_time}
+                                </p>
+                                <GetStars val={this.props.data.rating}/>
+                            </p>
+                        </div>
+
+                        <div className="col-xs-1 vcenter-no-margin">
+                            {this.props.data.accept_10_bis && tenBisIcon}
+                        </div>
+
+                    </div>
+
 
                 </div>
 
