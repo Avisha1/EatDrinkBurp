@@ -12,23 +12,23 @@ module.exports = merge(sharedConfig, {
   devtool: 'source-map',
   stats: 'normal',
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      sourceMap: true,
-      warnings: true,
-      compress: {
-        warnings: false
-      },
+    // new webpack.optimize.UglifyJsPlugin({
+    //   minimize: true,
+    //   sourceMap: true,
+    //   warnings: true,
+    //   compress: {
+    //     warnings: false
+    //   },
+    //
+    //   output: {
+    //     comments: false
+    //   }
+    // }),
 
-      output: {
-        comments: false
-      }
-    }),
-
-    new CompressionPlugin({
-      asset: '[path].gz[query]',
-      algorithm: 'gzip',
-      test: /\.(js|css|html|json|ico|svg|eot|otf|ttf)$/
-    })
+    // new CompressionPlugin({
+    //   asset: '[path].gz[query]',
+    //   algorithm: 'gzip',
+    //   test: /\.(js|css|html|json|ico|svg|eot|otf|ttf)$/
+    // })
   ]
 })
