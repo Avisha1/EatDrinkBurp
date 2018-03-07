@@ -19,7 +19,7 @@ class ContentPage extends React.Component {
     componentWillMount() {
         console.log('componentWillMount');
 
-        fetch('http://localhost:3000/restaurants.json')
+        fetch('/restaurants.json')
             .then(response => response.json())
             .then((items) => this.setState(({data: items})));
 

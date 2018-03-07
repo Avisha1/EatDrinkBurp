@@ -36,7 +36,7 @@
 }
 
 .ten_bis_icon {
-    background-image: url(./10bis_icon.jpg);
+    background-image: image_url("./10bis_icon.jpg");
     width: 50px;
     height: 50px;
 }

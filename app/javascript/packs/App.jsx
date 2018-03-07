@@ -16,7 +16,7 @@ class App extends React.Component {
     }
 
     componentWillMount() {
-        fetch('http://localhost:3000/api/v1/cuisines/get_all_cuisines.json')
+        fetch('/api/v1/cuisines/get_all_cuisines.json')
             .then(response => response.json())
             .then((items) => this.setState(({cuisines: items})));
     }
