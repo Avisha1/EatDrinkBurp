@@ -4,7 +4,7 @@ class Restaurant extends React.Component {
 
     render() {
         console.log('restaurant object', this.props.data);
-        const tenBisIcon = <img className="ten_bis_icon" src="/assets/10bis_icon.jpg"/>;
+        const tenBisIcon = <img className="ten_bis_icon"/>;
 
         return (
             <div className="row">
