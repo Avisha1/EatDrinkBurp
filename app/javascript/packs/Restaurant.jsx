@@ -1,10 +1,10 @@
 import React from 'react'
+import Modal from 'react-modal'
 
 class Restaurant extends React.Component {
 
     render() {
         console.log('restaurant object', this.props.data);
-        const tenBisIcon = <img className="ten_bis_icon"/>;
 
         return (
             <div className="row">
@@ -20,7 +20,6 @@ class Restaurant extends React.Component {
 
                         <div className="col-xs-11">
 
-                            <p>
                                 <strong>{this.props.data.name}</strong> ({this.props.data.cuisine_name})
                                 <p className="small">
                                     Address: {this.props.data.address}
@@ -29,11 +28,10 @@ class Restaurant extends React.Component {
                                     Delivery Time: {this.props.data.max_delivery_time}
                                 </p>
                                 <GetStars val={this.props.data.rating}/>
-                            </p>
                         </div>
 
                         <div className="col-xs-1 vcenter-no-margin">
-                            {this.props.data.accept_10_bis && tenBisIcon}
+                            {this.props.data.accept_10_bis && <img className="ten_bis_icon"/>}
                         </div>
 
                     </div>
